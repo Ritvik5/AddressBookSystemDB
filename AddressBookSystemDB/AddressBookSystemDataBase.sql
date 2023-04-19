@@ -42,4 +42,5 @@ update AddressBook_System set City = 'Mysore' where FirstName = 'Ram';
 select * from AddressBook_System where City = 'Mangalore';
 select * from AddressBook_System where City = 'Bangalore';
 
-
+SELECT COUNT(*) FROM AddressBook_System where State = 'Karnataka';
+SELECT COUNT(*) FROM AddressBook_System where City = 'Bangalore';
