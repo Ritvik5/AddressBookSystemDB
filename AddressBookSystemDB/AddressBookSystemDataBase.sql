@@ -22,3 +22,4 @@ insert into AddressBook_System values
 ('Ram','Kumar','Street No. 67','Bangalore','Karnataka',560056,8888811111,'Sham@gmail.com'),
 ('Shyam','Shetty','Street No. 69','Bangalore','Karnataka',560056,8888822222,'Raju@gmail.com')
 
+update AddressBook_System set PhoneNumber = 8888875757 where FirstName = 'Babu';
