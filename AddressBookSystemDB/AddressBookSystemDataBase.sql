@@ -44,3 +44,6 @@ select * from AddressBook_System where City = 'Bangalore';
 
 SELECT COUNT(*) FROM AddressBook_System where State = 'Karnataka';
 SELECT COUNT(*) FROM AddressBook_System where City = 'Bangalore';
+
+
+select * from AddressBook_System where City = 'Bangalore' Order by FirstName;
