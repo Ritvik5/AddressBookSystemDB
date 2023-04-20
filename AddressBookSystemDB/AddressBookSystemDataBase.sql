@@ -47,3 +47,16 @@ SELECT COUNT(*) FROM AddressBook_System where City = 'Bangalore';
 
 
 select * from AddressBook_System where City = 'Bangalore' Order by FirstName;
+
+alter table AddressBook_System add AddressBookName Varchar(100) , AddressBookType Varchar(100);
+update AddressBook_System 
+Set AddressBookName = 'MyAddressBook';
+
+update AddressBook_System 
+set AddressBookType = 'Family' where FirstName = 'Ritvik';
+update AddressBook_System 
+set AddressBookType = 'Friend' where FirstName = 'Babu';
+update AddressBook_System 
+set AddressBookType = 'Professional' where FirstName = 'Ram';
+update AddressBook_System 
+set AddressBookType = 'Relative' where FirstName = 'Shyam';
