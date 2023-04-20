@@ -66,3 +66,9 @@ select count(AddressBookType) as CountByType from AddressBook_System where Addre
 select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Relative';
 select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Friend';
 select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Family';
+
+
+insert into AddressBook_System values
+('Jack','Snow','Street No. 77','Mohali','Punjab',561111,9090909090,'Jack@gmail.com','DeathNote','Friend'),
+('Joe','Smith','Street No. 99','Lucknow','Uttar Pradesh',247111,9090909999,'Joe@gmail.com','MyAddressBook','Family')
+
