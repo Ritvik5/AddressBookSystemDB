@@ -72,3 +72,29 @@ insert into AddressBook_System values
 ('Jack','Snow','Street No. 77','Mohali','Punjab',561111,9090909090,'Jack@gmail.com','DeathNote','Friend'),
 ('Joe','Smith','Street No. 99','Lucknow','Uttar Pradesh',247111,9090909999,'Joe@gmail.com','MyAddressBook','Family')
 
+
+//UC13-Ensure all retrieve queries done in UC6, UC7, UC8 and UC10
+
+select * from AddressBook_System where City = 'Mangalore';
+select * from AddressBook_System where City = 'Bangalore';
+select * from AddressBook_System where State = 'Karnataka';
+select * from AddressBook_System where City = 'Mohali';
+select * from AddressBook_System where State = 'Uttar Pradesh';
+
+
+
+SELECT COUNT(*) FROM AddressBook_System where State = 'Karnataka';
+SELECT COUNT(*) FROM AddressBook_System where City = 'Bangalore';
+SELECT COUNT(*) FROM AddressBook_System where City = 'Mohali';
+SELECT COUNT(*) FROM AddressBook_System where State = 'Uttar Pradesh';
+
+
+select * from AddressBook_System where City = 'Bangalore' Order by FirstName;
+select * from AddressBook_System where State = 'Karnataka' Order by FirstName;
+select * from AddressBook_System where State = 'Punjab' Order by FirstName;
+
+
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Professional';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Relative';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Friend';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Family';
