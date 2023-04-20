@@ -60,3 +60,9 @@ update AddressBook_System
 set AddressBookType = 'Professional' where FirstName = 'Ram';
 update AddressBook_System 
 set AddressBookType = 'Relative' where FirstName = 'Shyam';
+
+
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Professional';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Relative';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Friend';
+select count(AddressBookType) as CountByType from AddressBook_System where AddressBookType ='Family';
